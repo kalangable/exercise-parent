@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.org.catolicasc.adilson.krasovski.helpers.Footer;
 import br.org.catolicasc.adilson.krasovski.helpers.Head;
+import br.org.catolicasc.adilson.krasovski.helpers.Menu;
 
 /**
  * Servlet implementation class Tabuada
@@ -34,29 +35,9 @@ public class TabuadaVariada extends HttpServlet {
 		StringWriter buffer = new StringWriter();
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
-		out.println(Head.getHeadWhithTitle("Exercicio 3"));
+		out.println(Head.getElement("Exercicio 3"));
 		out.println("    <body role=\"document\">");
-		out.println("<!-- Fixed navbar -->                                                                                                                                       ");
-		out.println("<div class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">                                                                                      ");
-		out.println("  <div class=\"container\">                                                                                                                                   ");
-		out.println("    <div class=\"navbar-header\">                                                                                                                             ");
-		out.println("      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">                                          ");
-		out.println("        <span class=\"sr-only\">Toggle navigation</span>                                                                                                      ");
-		out.println("        <span class=\"icon-bar\"></span>                                                                                                                      ");
-		out.println("        <span class=\"icon-bar\"></span>                                                                                                                      ");
-		out.println("        <span class=\"icon-bar\"></span>                                                                                                                      ");
-		out.println("      </button>                                                                                                                                             ");
-		out.println("      <a class=\"navbar-brand\" href=\"#\">Servlets</a>                                                                                                  ");
-		out.println("    </div>                                                                                                                                                  ");
-		out.println("    <div class=\"navbar-collapse collapse\">                                                                                                                  ");
-		out.println("      <ul class=\"nav navbar-nav\">                                                                                                                           ");
-		out.println("        <li class=\"active\"><a href=\"OlaMundo\">Inicio</a></li>                                                                                                        ");
-		out.println("        <li><a href=\"Tabuada\">Tabuada</a></li>                                                                                                                 ");
-		out.println("        <li><a href=\"TabuadaVariada\">Tabela Tabuada</a></li>");
-		out.println("      </ul>");
-		out.println("    </div>");
-		out.println("    </div>");
-		out.println("</div>                                                                                                                                                      ");
+		out.println(Menu.getElement());
 
 		out.println("    <div class=\"container theme-showcase\" role=\"main\"> ");
 		out.println("<div class=\"jumbotron\">");
@@ -93,7 +74,7 @@ public class TabuadaVariada extends HttpServlet {
 
 		out.println("</div>                                                                                                                                                      ");
 		out.println("</div>                                                                                                                                                      ");
-		out.println(Footer.getFooter());
+		out.println(Footer.getElement());
 
 		buffer.write("    </body>\n");
 		buffer.write("</html>");
