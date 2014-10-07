@@ -1,7 +1,7 @@
 package br.org.catolicasc.adilson.krasovski.helpers;
 
 /**
- * Utilitário para incluir o /r no StringBuffer e formatar melhor a saída para o Browser
+ * Utilitario para incluir o /r no StringBuffer e formatar melhor a saida para o Browser
  * @author adilson.krasovski
  *
  */

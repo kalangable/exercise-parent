@@ -26,6 +26,7 @@
 		<version.build.helper.plugin>1.8</version.build.helper.plugin>
 		<version.jacoco.plugin>0.5.7.201204190339</version.jacoco.plugin>
 		<version.javax.servlet>3.0.1</version.javax.servlet>
+		<version.config>1.2.0</version.config>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -50,6 +51,11 @@
 				<artifactId>javax.servlet-api</artifactId>
 				<version>${version.javax.servlet}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.typesafe</groupId>
+				<artifactId>config</artifactId>
+				<version>${version.config}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -336,5 +342,6 @@
 	</build>
 	<modules>
 		<module>exercise-servlet</module>
+		<module>exercise-commons</module>
 	</modules>
 </project>

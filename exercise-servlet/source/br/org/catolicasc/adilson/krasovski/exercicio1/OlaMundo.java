@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import lombok.extern.java.Log;
 import br.org.catolicasc.adilson.krasovski.helpers.Footer;
 import br.org.catolicasc.adilson.krasovski.helpers.Head;
 import br.org.catolicasc.adilson.krasovski.helpers.Menu;
@@ -16,7 +17,8 @@ import br.org.catolicasc.adilson.krasovski.helpers.Menu;
 /**
  * Servlet implementation class OlaMundo
  */
-@WebServlet("/OlaMundo")
+@Log
+@WebServlet( "/OlaMundo" )
 public class OlaMundo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -24,30 +26,30 @@ public class OlaMundo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=UTF-8");
+	protected void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
+		response.setContentType( "text/html;charset=UTF-8" );
 		PrintWriter out = response.getWriter();
+		log.info( System.getProperty( "catalina.base" ) );
+		out.println( "<!DOCTYPE html>" );
+		out.println( "<html>" );
+		out.println( Head.getElement() );
+		out.println( "	<body role=\"document\">" );
+		out.println( Menu.getElement() );
 
-		out.println("<!DOCTYPE html>");
-		out.println("<html>");
-		out.println(Head.getElement());
-		out.println("	<body role=\"document\">");
-		out.println(Menu.getElement());
+		out.println( "		<div class=\"container theme-showcase\" role=\"main\"> " );
+		out.println( "			<div class=\"jumbotron\">" );
+		out.println( "				<h1>Exercicio 1</h1>" );
+		out.println( "				<p class=\"lead\">Faca um Servlet que escreva Ola Mundo. E rode atraves da sua IDE</p>" );
+		out.println( "			</div>" );
 
-		out.println("		<div class=\"container theme-showcase\" role=\"main\"> ");
-		out.println("			<div class=\"jumbotron\">");
-		out.println("				<h1>Exercicio 1</h1>");
-		out.println("				<p class=\"lead\">Faça um Servlet que escreva Olá Mundo. E rode através da sua IDE</p>");
-		out.println("			</div>");
+		out.println( "			<div class=\"page-header\">     " );
+		out.println( "				<h1>Ola Mundo!</h1>               " );
+		out.println( "			</div>                        " );
+		out.println( "		</div>                        " );
 
-		out.println("			<div class=\"page-header\">     ");
-		out.println("				<h1>Ola Mundo!</h1>               ");
-		out.println("			</div>                        ");
-		out.println("		</div>                        ");
-
-		out.println(Footer.getElement());
-		out.println("    </body>\n");
-		out.println("</html>");
+		out.println( Footer.getElement() );
+		out.println( "    </body>\n" );
+		out.println( "</html>" );
 
 	}
 
