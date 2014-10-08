@@ -1,4 +1,4 @@
-package br.org.catolicasc.adilson.krasovski;
+package br.org.catolicasc.adilson.krasovski.exercicio3;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -45,18 +45,18 @@ public class TabuadaVariada extends HttpServlet {
 		out.println("    <p class=\"lead\">Faca um Servlet que imprima as tabuada do 2 ao 10</p>");
 		out.println("</div>");
 
-		out.println("<div class=\"page-header\">     ");
-		out.println("<h1>Tabuada</h1>               ");
-		out.println("</div>                        ");
+		out.println("<div class=\"page-header\">");
+		out.println("<h1>Tabuada</h1>");
+		out.println("</div>");
 		out.println("<table class=\"table table-striped\">         ");
-		out.println("<thead>                 ");
-		out.println("<tr>                    ");
+		out.println("<thead>");
+		out.println("<tr>");
 		for (int i = 2; i <= 10; i++) {
-			out.println("  <th>" + i + "</th>            ");
+			out.println("  <th>" + i + "</th>");
 		}
-		out.println("</tr>                   ");
-		out.println("</thead>                ");
-		out.println(" <tbody>                ");
+		out.println("</tr>");
+		out.println("</thead>");
+		out.println(" <tbody>");
 
 		for (int j = 0; j <= 10; j++) {
 			CalculaTabuada c = new CalculaTabuada(j);

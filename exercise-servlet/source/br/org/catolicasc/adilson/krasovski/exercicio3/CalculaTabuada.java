@@ -1,4 +1,4 @@
-package br.org.catolicasc.adilson.krasovski;
+package br.org.catolicasc.adilson.krasovski.exercicio3;
 
 import lombok.Data;
 import lombok.NonNull;
