@@ -27,6 +27,7 @@
 		<version.jacoco.plugin>0.5.7.201204190339</version.jacoco.plugin>
 		<version.javax.servlet>3.0.1</version.javax.servlet>
 		<version.config>1.2.0</version.config>
+		<!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -139,7 +140,7 @@
 					<target>1.7</target>
 					<optimize>false</optimize>
 					<debug>true</debug>
-					<encoding>UTF-8</encoding>
+					<!-- <encoding>UTF-8</encoding> -->
 				</configuration>
 				<executions>
 					<execution>

@@ -25,6 +25,7 @@ public class Menu extends Element {
 		addLine(sb, "						<li><a href=\"Primos\">Primos</a></li>");
 		addLine(sb, "						<li><a href=\"TabuadaGET\">Tabuada GET</a></li>");
 		addLine(sb, "						<li><a href=\"TabuadaPOST\">Tabuada POST</a></li>");
+		addLine(sb, "						<li><a href=\"Media\">Média</a></li>");
 		addLine(sb, "					</ul>");
 		addLine(sb, "				</div>");
 		addLine(sb, "			</div>");
