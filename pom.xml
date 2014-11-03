@@ -343,6 +343,7 @@
 	<modules>
 		<module>exercise-servlet</module>
 		<module>exercise-commons</module>
-    <module>exercise-jsp</module>
+		<module>exercise-struts</module>
+		<module>exercise-jsp</module>
   </modules>
 </project>
