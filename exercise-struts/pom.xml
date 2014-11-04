@@ -20,6 +20,12 @@
 	<!-- <artifactId>javax.servlet-api</artifactId> -->
 	<!-- </dependency> -->
 	<!-- </dependencies> -->
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+		</dependency>
+	</dependencies>
 	<build>
 		<finalName>exercise-struts</finalName>
 	</build>

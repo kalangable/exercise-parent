@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.org.catolicasc.adilson.krasovski</groupId>
 	<artifactId>exercise-parent</artifactId>
@@ -26,6 +27,7 @@
 		<version.jacoco.plugin>0.5.7.201204190339</version.jacoco.plugin>
 		<version.javax.servlet>3.0.1</version.javax.servlet>
 		<version.config>1.2.0</version.config>
+		<version.struts>2.3.16.3</version.struts>
 		<!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
 	</properties>
 	<dependencyManagement>
@@ -56,6 +58,11 @@
 				<groupId>com.typesafe</groupId>
 				<artifactId>config</artifactId>
 				<version>${version.config}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-core</artifactId>
+				<version>${version.struts}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -314,7 +321,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore/>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -330,7 +337,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore/>
+										<ignore />
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -345,5 +352,5 @@
 		<module>exercise-commons</module>
 		<module>exercise-struts</module>
 		<module>exercise-jsp</module>
-  </modules>
+	</modules>
 </project>
